@@ -1,8 +1,8 @@
 This document contains the function specification for clean calc
 
 add: function
-	>args: 2
-		>>arg1: a number
+	> args: 2
+		>> arg1: a number
 			purpose: serve as first argument for computation
 		arg2: a number
 			purpose: serve as second argument for computation
