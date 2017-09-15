@@ -5,6 +5,7 @@
 //Cleancalc
 
 ```javascript
+
 var lastResult = 0000;
 
 function add(arg1, arg2) {
