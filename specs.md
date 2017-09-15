@@ -1,4 +1,4 @@
-# SPECIFICATIONS
+# SPECIFICATIONS.
 This document contains the function specification for clean calc
 
 ```javascript
