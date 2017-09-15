@@ -4,9 +4,9 @@
 // -------------------  v0.0  --------------------- //
 //Cleancalc
 
-```javascript
-```javascript
+
 var lastResult = 0000;
+
 function add(arg1, arg2) {
 	return arg1 + arg2;
 };
