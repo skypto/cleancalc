@@ -1,7 +1,7 @@
 // this is the functions and variables that will become props and methods in cleancalc
 // this file uses'procedural programming' - writing things in the order that they will execute
 
-// -------------------  v0.0  --------------------- //
+// -------------------  v0.0.0  --------------------- //
 //Cleancalc
 
 
