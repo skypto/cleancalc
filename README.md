@@ -1,5 +1,9 @@
 # CLEANCALC*
 
+## v0.2.0
+
+* Introduction of html page that will work as the frontend for the cleancalc.
+
 ## v0.1.0  
 
 * Now possible to pass the arguments as well as the operation type in a single function for computation.
