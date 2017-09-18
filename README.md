@@ -1,5 +1,9 @@
 # CLEANCALC*
 
+## v1.0.0
+* Introduction of new object that contains all the functions required for performing the calculations.
+
+
 ## v0.2.0
 
 * Introduction of html page that will work as the frontend for the cleancalc.
@@ -14,9 +18,9 @@
 ```
 Example of usage: console.log(lastResult);
 ================ 
-lastResult = operateIntermediary(add, 2, 4);
-lastResult = operateIntermediary(add, 5, lastResult);
-lastResult = operateIntermediary(multiply, 3,2);
+lastResult = operateIntermediary('add', 2, 4);
+lastResult = operateIntermediary('add', 5, lastResult);
+lastResult = operateIntermediary('multiply', 3,2);
 ```
 
 ##  v0.0.0

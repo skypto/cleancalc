@@ -1,48 +1,34 @@
-// this is the functions and variables that will become props and methods in cleancalc
-// this file uses'procedural programming' - writing things in the order that they will execute
-
-// -------------------  v0.0.0  --------------------- //
-//Cleancalc
+// This object contains all the functions that are required to perform the calculations.
+// It accepts a string and 2 arguments of type number
+// -------------------  v1.0.0  --------------------- //
 
 
-var lastResult = 0000;
-
-function add(arg1, arg2) {
+var calc = {
+	lastResult: 0,
+	operate: function(operation, arg1, arg2) {
+	if (arg2) {
+		lastResult = this[operation](arg1, arg2); // -> this.add
+        // this[variableName] -> this.value
+		return lastResult;
+	} else {
+		lastResult = operation(arg1, lastResult);
+		return lastResult;
+	}
+},
+add: function(arg1, arg2) {
 	return arg1 + arg2;
-};
-
-function subtract(arg1, arg2) {
+},
+subtract: function(arg1, arg2) {
 	return arg1 - arg2;
-};
-
-function multiply(arg1, arg2) {
+},
+multiply: function(arg1, arg2) {
 	return arg1 * arg2;
-};
-
-function divide(arg1, arg2) {
+},
+divide: function(arg1, arg2) {
 	return arg1 / arg2;
-};
+},
+}
 
 /* Example of usage
-lastResult = add(2, 4);
-lastResult = add(5, lastResult);
-lastResult = multiply(3,2);
-*/
-
-// -------------------  v0.1.0  --------------------- //
-
-lastResult = 0000;
-
-function operateIntermediary(operation, arg1, arg2) {
-	return operation(arg1, arg2);
-};
-
-lastResult = operateIntermediary(add, 2, 4);
-lastResult = operateIntermediary(add, 5, lastResult);
-lastResult = operateIntermediary(multiply, 3,2);
-
-/* Example of usage
-lastResult = operateIntermediary(add, 2, 4);
-lastResult = operateIntermediary(add, 5, lastResult);
-lastResult = operateIntermediary(multiply, 3,2);
+console.log(calc.operate('add', 3, 4))
 */
