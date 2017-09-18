@@ -1,5 +1,9 @@
 # CLEANCALC*
 
+## v1.1.0
+* Web interface for performing computations.
+* New DOM file(dom.js) created for manipulation of data.
+
 ## v1.0.0
 * Introduction of new object that contains all the functions required for performing the calculations.
 
